@@ -8,14 +8,14 @@ HackWiki is a community-driven project and we welcome contributions from securit
 
 ## Ways to Contribute
 
-### 📝 Content Contributions
+### Content Contributions
 
 - **New articles** — Write about techniques, tools, or concepts not yet covered
 - **Improvements** — Expand existing articles with more detail or examples
 - **Corrections** — Fix technical errors, typos, or outdated information
 - **Code examples** — Add practical code snippets and demonstrations
 
-### 🐛 Bug Reports
+### Bug Reports
 
 Found something broken? Open an issue describing:
 - What you expected to happen
@@ -96,7 +96,7 @@ We use GitHub for all contributions:
 
 Visit our repository to get started:
 
-**[→ HackWiki on GitHub](https://github.com/YOUR_USERNAME/hackwiki)**
+**[HackWiki on GitHub](https://github.com/hack-wiki/hackwiki-notes)**
 
 ## Questions?
 
@@ -104,4 +104,4 @@ If you're unsure about anything or want to discuss a potential contribution befo
 
 ---
 
-Thank you for helping make HackWiki a better resource for the security community! 🛡️
+Thank you for helping make HackWiki a better resource for the security community!
