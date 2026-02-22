@@ -114,6 +114,43 @@ For **contributions**, please use our [GitHub repository](https://github.com/hac
     border: 1px solid var(--accent-primary);
     color: var(--accent-primary);
 }
+.contact-form .form-success-banner {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+}
+.contact-form .form-success-banner i {
+    font-size: 2.5rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    display: block;
+}
+.contact-form .form-success-banner h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+.contact-form .form-success-banner p {
+    color: var(--text-secondary);
+    margin: 0 0 1.5rem;
+    font-size: 0.95rem;
+}
+.contact-form .btn-reset {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1.2rem;
+    background: transparent;
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.contact-form .btn-reset:hover {
+    background: rgba(0, 212, 255, 0.1);
+}
 .contact-form .form-status.error {
     display: block;
     background: rgba(255, 71, 87, 0.1);
@@ -293,10 +330,14 @@ For **contributions**, please use our [GitHub repository](https://github.com/hac
         .then(function(r) { return r.json(); })
         .then(function(data) {
             if (data.success) {
-                status.className = 'form-status success';
-                status.textContent = data.message || 'Message sent successfully!';
-                form.reset();
-                loadCaptcha();
+                // Replace form with a clear success banner
+                form.innerHTML = '<div class="form-success-banner">' +
+                    '<i class="fas fa-check-circle"></i>' +
+                    '<h3>Message Sent</h3>' +
+                    '<p>Thank you! We\'ll get back to you as soon as possible.</p>';
+                form.querySelector('#sendAnother').addEventListener('click', function() {
+                    window.location.reload();
+                });
             } else {
                 status.className = 'form-status error';
                 status.textContent = data.message || 'Something went wrong. Please try again.';
