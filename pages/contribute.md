@@ -86,8 +86,8 @@ We use GitHub for all contributions:
 1. **Fork** the repository
 2. **Clone** your fork locally
 3. **Create a branch** for your changes
-4. **Write or edit** content in the `notes_content/` folder
-5. **Test** by running `python3 md2html.py`
+4. **Write or edit** content in the `notes/` folder
+5. **Test** by running `python3 grimoire.py`
 6. **Commit** with a clear message
 7. **Push** to your fork
 8. **Open a pull request** with a description of your changes
