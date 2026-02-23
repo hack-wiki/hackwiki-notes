@@ -334,10 +334,8 @@ For **contributions**, please use our [GitHub repository](https://github.com/hac
                 form.innerHTML = '<div class="form-success-banner">' +
                     '<i class="fas fa-check-circle"></i>' +
                     '<h3>Message Sent</h3>' +
-                    '<p>Thank you! We\'ll get back to you as soon as possible.</p>';
-                form.querySelector('#sendAnother').addEventListener('click', function() {
-                    window.location.reload();
-                });
+                    '<p>Thank you! We\'ll get back to you as soon as possible.</p>' +
+                    '</div>';
             } else {
                 status.className = 'form-status error';
                 status.textContent = data.message || 'Something went wrong. Please try again.';
